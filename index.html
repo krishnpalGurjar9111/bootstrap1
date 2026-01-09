@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .a {
+            width: 100%;
+
+        }
+
+        .b {
+            display: flex;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .bg-danger {
+            background: red;
+        }
+
+        .bg-success {
+            background: green;
+        }
+
+
+        /*--responsive (mobile view)---*/
+
+        @media (max-width: 768px) {
+            .b {
+                flex-direction: column;
+                /*side-by-side  top bottom--*/
+            }
+
+            .col-6 {
+                width: 100px;
+                /* full width in mobile*/
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="col-6 bg-danger">
+                <h2>hello</h2>
+
+            </div>
+            <div class="col-6 bg-success">
+                <h2>hello</h2>
+            </div>
+        </div>
+        <!--b end-->
+    </div>
+    <!--a end-->
+
+
+
+
+</body>
+
+</html>
